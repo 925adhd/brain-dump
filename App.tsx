@@ -4,7 +4,6 @@ import { processBrainDump, generateSlideImage } from './geminiService';
 import { exportToPptx, exportToDocx } from './exportService';
 import { Button } from './components/Button';
 import { SlideCard } from './components/SlideCard';
-import { VoiceRecorder } from './components/VoiceRecorder';
 import { HistoryView } from './components/HistoryView';
 import { Presentation, AppStatus, Slide } from './types';
 
@@ -283,8 +282,6 @@ const App: React.FC = () => {
               </div>
             </form>
 
-            {/* Voice input — secondary */}
-            <VoiceRecorder onTranscriptUpdate={setBrainDump} onFinished={() => {}} />
 
           </div>
         )}
