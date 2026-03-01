@@ -1,0 +1,7 @@
+{
+  "name": "Brain-Dump → Slides",
+  "description": "Convert your messy, unstructured thoughts into a clear, professional presentation outline in under 60 seconds. Designed specifically for ADHD-friendly workflows.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
