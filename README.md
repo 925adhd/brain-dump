@@ -1,20 +1,27 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Brain Dump → Slides
 
-# Run and deploy your AI Studio app
+Paste or speak your unstructured thoughts and get a structured presentation with AI-generated slides and images.
 
-This contains everything you need to run your app locally.
+## What it does
 
-View your app in AI Studio: https://ai.studio/apps/007761ca-c49b-4176-a543-0a8be63afa80
+- Takes messy notes or a brain dump as input
+- Organizes them into a 6–10 slide presentation
+- Generates a visual image for each slide
+- Exports to PPTX or Word (with speaker script)
+- Saves presentation history locally in your browser
 
-## Run Locally
+## Tech
 
-**Prerequisites:**  Node.js
+- React + TypeScript + Vite
+- Google Gemini API (text and image generation)
+- Deployed on Vercel (serverless API routes keep the API key secure)
 
+## Running locally
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+1. Install dependencies: `npm install`
+2. Add your API key to `.env.local`: `GEMINI_API_KEY=your_key_here`
+3. Run with Vercel dev (required for API routes): `vercel dev`
+
+## Deployment
+
+Push to GitHub and import the repo into Vercel. Add `GEMINI_API_KEY` in the Vercel project environment variable settings. No other configuration needed.
